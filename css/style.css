@@ -1,0 +1,479 @@
+@font-face {
+    font-family: "Brandonreg";
+    src: url(https://devmind.io/assets/modules/editor-beta/Brandon_Grotesque/Brandon_reg.otf);
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	outline: none;
+	font-family: "Brandon Grotesque", "Brandonreg", sans-serif;
+}
+
+body {
+	overflow-x: hidden;
+	overflow-y: auto;
+	letter-spacing: 1px;
+}
+
+section {
+	float: left;
+	position: relative;
+	width: calc(100vw - 20%);
+	padding: 0px 10%;
+}
+
+.first {
+	width: 100vw;
+	padding: 0px;
+	height: 85vh;
+	background-color: #01aaed;
+	background-image: url(https://i.imgur.com/QPYpOJR.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+header {
+	float: left;
+	width: 80%;
+	height: 79px;
+	padding: 0px 10%;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.logo {
+	float: left;
+	width: 200px;
+	height: 60px;
+	margin-top: 10px;
+	background: url(https://devmind.io/assets/modules/editor-beta/img/devlogo.png) center no-repeat;
+}
+
+header > nav {
+	float: right;
+}
+
+nav > .link {
+	float: left;
+	margin-top: 29px;
+	margin-left: 25px;
+	text-decoration: none;
+	color: #FFF;
+	opacity: 0.75;
+	font-size: 16px;
+	transition: all 0.13s ease;
+}
+
+.link:hover {
+	opacity: 1;
+}
+
+.login {
+	margin-top: 17px;
+	margin-left: 25px;
+	padding: 10px;
+	color: #FFF;
+	background: transparent;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	border-radius: 3px;
+	cursor: pointer;
+	opacity: 0.85;
+	transition: all 0.13s ease;
+}
+
+.login:hover {
+	border: 1px solid #FFF;
+	opacity: 1;
+}
+
+.login svg {
+	float: left;
+	width: 24px;
+	height: 24px;
+	fill: #FFF;
+}
+
+.login span {
+	float: left;
+	margin: 0px 10px;
+	margin-top: 1px;
+	font-size: 16px;
+}
+
+.left-half {
+	float: left;
+	width: 40%; 
+	margin-top: 15vh;
+	margin-left: 10%;
+	color: #FFF;
+}
+
+.left-half h1 {
+	float: left;
+	width: 100%;
+	font-size: 28px;
+	margin-bottom: 25px;
+}
+
+.left-half p {
+	width: 85%;
+	letter-spacing: 1px;
+	line-height: 20px;
+	font-size: 16px;
+}
+
+.left-half button {
+	letter-spacing: 1px;
+	cursor: pointer;
+	float: left;
+	margin-top: 40px;
+	padding: 10px 20px;
+	color: #FFF;
+	background: transparent;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	border-radius: 3px;
+}
+
+.right-half {
+	float: right;
+	width: 40%;
+	height: 60%;
+	margin-right: 10%;
+	margin-top: 11vh;
+	background: center no-repeat url(https://previewtheme.com/prometium/wp-content/uploads/revslider/slider1/header-slider-2.png);
+	background-size: contain;
+}
+
+/* SECTION 2 */
+.second {
+	margin: 30px 0px;
+}
+
+h2 {
+	color: #01aaed;
+}
+
+.second > .left {
+	float: left;
+	margin-top: 20px;
+	width: 40%;
+}
+
+.second > .left .description {
+	color: #999;
+	float: left;
+}
+
+.second > .right {
+	float: right;
+	width: 40%;
+	height: 280px;
+	margin-top: 20px;
+	background: #01aaed;
+}
+
+.diferenciais {
+	float: left;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+	height: auto;
+	margin-top: 40px;
+}
+
+.diferenciais > .card {
+	width: 30%;
+	height: 120px;
+	margin-bottom: 55px;
+}
+
+.diferenciais > .card > svg {
+	float: left;
+	width: 15%;
+	height: 40px;
+	fill: #01aaed;
+	margin: 10px 15px;
+}
+
+.diferenciais > .card > .title {
+	width: 73%;
+	float: right;
+	font-size: 20px;
+	font-weight: 600;
+	color: #01aaed;
+	margin-top: 15px;
+}
+
+.diferenciais > .card > .description {
+	width: 73%;
+	float: right;
+	font-size: 14px;
+	color: #999;
+	margin-top: 15px;
+}
+
+.integracoes {
+	float: left;
+	width: 100%;
+	height: 300px;
+	background: #01aaed;
+	margin: 40px 0px;
+}
+
+.integracoes > .title {
+	margin-left: 30px;
+	margin-top: 20px;
+	font-size: 20px;
+	color: #FFF;
+}
+
+/* TERCEIRA SEÇÃO */
+.third {
+	float: left;
+	padding-bottom: 50px;
+}
+
+h3, h4 {
+	width: 100%;
+	font-size: 32px;
+	text-align: center;
+	color: #01aaed;
+}
+
+/* QUARTA SEÇÃO */
+.fourth {
+	float: left;
+	padding-bottom: 50px;
+}
+
+.H4desc {
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #999;
+}
+
+.carousel {
+	display: flex;
+	justify-content: space-between;
+	float: left;
+	width: 100%;
+	height: auto;
+}
+
+.carousel > .card {
+	float: left;
+	position: relative;
+	width: 30%;
+	height: auto;
+	margin-top: 65px;
+	-webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+	box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+	border-radius: 10px;
+	padding-bottom: 15px;
+}
+
+.carousel > .card > .img {
+	position: absolute;
+	top: -43px;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+	width: 80px;
+	height: 80px;
+	border: 3px solid #FFF;
+	border-radius: 100%;
+	background: #01aaed;
+}
+
+.carousel > .card > .description {
+	float: left;
+	width: 80%;
+	margin-left: 10%;
+	text-align: center;
+	font-size: 16px;
+	color: #555;
+	padding: 20px 0px;
+	padding-top: 60px;
+}
+
+.carousel > .card > .name, .carousel > .card > span {
+	float: left;
+	width: 70%;
+	height: auto;
+	margin-left: 15%;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	text-align: center;
+	font-size: 16px;
+	border-top: 1px solid #DDD;
+}
+
+.carousel > .card > span {
+	border: none;
+	padding: 0px;
+	color: #999;
+	font-size: 14px;
+	display: block;
+}
+
+.pagination {
+	display: flex;
+	justify-content: center;
+	float: left;
+	width: 100%;
+	height: auto;
+	margin: 35px 0px;
+}
+
+.pagination > .dot {
+	width: 16px;
+	height: 16px;
+	background: #DDD;
+	border-radius: 100%;
+	margin: 0px 10px;
+	cursor: pointer;
+}
+
+.pagination > .dot:hover {
+	background: #BBB;
+}
+
+.pagination > .selected, .pagination > .selected:hover {
+	width: 16px;
+	height: 16px;
+	background: #01aaed;
+	border-radius: 100%;
+	margin: 0px 10px;
+}
+
+/* CALL TO ACTION */
+.call-to-action {
+	float: left;
+	margin: 35px 0px;
+	margin-bottom: 70px;
+	width: calc(100vw - 20%);
+	height: 350px;
+	background-color: #01aaed;
+	background-image: url(https://devmind.io/assets/img/poofy.svg);
+	background-size: cover;
+	background-position: center;
+}
+
+.cta-wrapper {
+	float: left;
+	width: 40%;
+	height: auto;
+	margin-left: 5%;
+	margin-top: 120px;
+}
+
+.cta-wrapper > h5, .cta-question {
+	color: #FFF;
+	float: left;
+	width: 100%;
+	height: auto;
+	font-weight: 500;
+	margin-bottom: 6px;
+}
+
+h5 {
+	font-size: 18px;
+}
+
+.cta-question {
+	font-size: 32px;
+}
+
+.ways-to-login {
+	float: right;
+	width: 300px;
+	height: 420px;
+	padding: 20px;
+	margin-top: -55px;
+	margin-right: 5%;
+	background: #FFF;
+	border-radius: 10px;
+	overflow: hidden;
+	-webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.25);
+	box-shadow: 0 0 10px 0 rgba(0,0,0,0.25);
+}
+
+.ways-to-login > .description {
+	float: left;
+	width: 100%;
+	margin-top: 20px;
+	color: #999;
+	text-align: center;
+}
+
+.ways-to-login > .wrapper {
+	width: 100%;
+	float: left;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.bullet {
+	float: left;
+	width: 120px;
+	height: 120px;
+	margin-top: 45px;
+	border-radius: 100%;
+	background: #FFF;
+	transition: all 0.13s ease;
+	-webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.25);
+	box-shadow: 0 0 10px 0 rgba(0,0,0,0.25);
+}
+
+.bullet:hover {
+	margin-top: 40px;
+}
+
+.bullet > svg {
+	float: left;
+	width: 70px;
+	height: 70px;
+	margin-left: 25px;
+	margin-top: 25px;
+	fill: #01aaed;
+}
+
+footer {
+	float: left;
+	width: 100%;
+	height: 300px;
+	background: #2184ee;
+}
+
+/* BOTÃO PARA LEVAR AO TOPO */
+.goTop {
+	position: fixed;
+	display: none;
+	width: 50px;
+	height: 50px;
+	right: 20px;
+	bottom: 20px;
+	border: none;
+	background: #FFFFFF;
+	border-radius: 100%;
+	-webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.25);
+	box-shadow: 0 0 10px 0 rgba(0,0,0,0.25);
+}
+
+/* Scrollbars Personalizadas */
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+ 
+::-webkit-scrollbar-track {
+    background-color: #DDDDDD;
+}
+ 
+::-webkit-scrollbar-thumb {
+    background-color: #01aaed; 
+}
