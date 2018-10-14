@@ -46,7 +46,7 @@ header {
 	width: 200px;
 	height: 60px;
 	margin-top: 10px;
-	background: url(https://devmind.io/assets/modules/editor-beta/img/devlogo.png) center no-repeat;
+	background: url("../img/devlogo.png") center no-repeat;
 }
 
 header > nav {
@@ -140,7 +140,7 @@ nav > .link {
 	height: 60%;
 	margin-right: 10%;
 	margin-top: 11vh;
-	background: center no-repeat url(https://previewtheme.com/prometium/wp-content/uploads/revslider/slider1/header-slider-2.png);
+	background: center no-repeat url("../img/svg/ilustração-devmind.svg");
 	background-size: contain;
 }
 
