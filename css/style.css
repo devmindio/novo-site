@@ -141,7 +141,7 @@ nav > .link {
 	margin-right: 10%;
 	margin-top: 11vh;
 	background: center no-repeat url("../img/svg/paper-plane.svg");
-	background-size: contain;
+	background-size: 50%;
 }
 
 /* SECTION 2 */
