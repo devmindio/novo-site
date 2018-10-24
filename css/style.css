@@ -363,14 +363,15 @@ h3, h4 {
 	margin-bottom: 120px;
 	width: calc(100vw - 20%);
 	height: 350px;
-	background-color: #01aaed;
+    background: left 60% no-repeat;
+	background-image: url(../img/bg-mobile.png);
+    background-size: 100% auto;
 }
 
 .cta-wrapper {
 	float: left;
 	width: 40%;
 	height: auto;
-	margin-left: 5%;
 	margin-top: 120px;
 }
 
@@ -384,11 +385,11 @@ h3, h4 {
 }
 
 h5 {
-	font-size: 18px;
+	font-size: 20px;
 }
 
 .cta-question {
-	font-size: 32px;
+	font-size: 44px;
 }
 
 .ways-to-login {
@@ -397,7 +398,6 @@ h5 {
 	height: 420px;
 	padding: 20px;
 	margin-top: -55px;
-	margin-right: 5%;
 	background: #FFF;
 	border-radius: 10px;
 	overflow: hidden;
