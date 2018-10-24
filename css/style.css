@@ -28,11 +28,13 @@ section {
 	padding: 0px;
 	height: 85vh;
 	background-color: #01aaed;
-	background-image: url(https://i.imgur.com/QPYpOJR.jpg);
+	background-image: url(../img/fundo-header.jpg);
 	background-size: cover;
-	background-position: center;
+	background-position: left center;
+    transition: all 0.13s ease;
 }
 
+/* HEADER PADRÃO */
 header {
 	float: left;
 	width: 80%;
@@ -41,7 +43,7 @@ header {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.logo {
+header .logo {
 	float: left;
 	width: 200px;
 	height: 60px;
@@ -98,6 +100,54 @@ nav > .link {
 	margin: 0px 10px;
 	margin-top: 1px;
 	font-size: 16px;
+}
+
+/* HEADER DESTACADO */
+.detach {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 9999;
+    background-color: #FFF;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.25);
+	box-shadow: 0 0 10px 0 rgba(0,0,0,0.25);
+}
+
+.detach .logo {
+    float: left;
+    width: 200px;
+    height: 60px;
+    margin-top: 10px;
+    background: url("../img/devlogo-blue.png") center no-repeat;
+    background-size: contain;
+}
+
+.detach nav > .link {
+	color: #CCC;
+	opacity: 1;
+}
+
+.detach nav > .link:hover {
+	color: #01aaed;
+}
+
+.detach .login {
+	color: #01aaed;
+	border: 1px solid #01aaed;
+	opacity: 1;
+}
+
+.detach .login:hover {
+    color: #FFF;
+	background: #01aaed;
+}
+
+.detach .login svg {
+	fill: #01aaed;
+}
+
+.detach .login:hover > svg {
+    fill: #FFF;
 }
 
 .left-half {
@@ -360,7 +410,7 @@ h3, h4 {
 .call-to-action {
 	float: left;
 	margin: 40px 0px;
-	margin-bottom: 120px;
+	margin-bottom: 0px;
 	width: calc(100vw - 20%);
 	height: 350px;
     background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 100%), url(../img/bg-mobile.png) left 60% no-repeat;

@@ -7,6 +7,7 @@
     
     <link rel="manifest" href="https://devmind.io/assets/modules/editor-beta/PWA/manifest.json">
     <link rel="shortcut icon" type="image/ico" href="img/favicon.ico"/>
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
 
@@ -42,13 +43,13 @@
         <p>Aumente a sua produtividade trabalhando em um ambiente colaborativo em nuvem que elimina o retrabalho, livre de configurações manuais, com métricas e gestão de times.</p>
 
         <a href="https://devmind.io/login">
-          <button>
+          <button class="wow jackInTheBox" data-wow-delay="0.5s">
             Teste Gratuitamente
           </button>
         </a>
       </div>
 
-      <div class="right-half">
+      <div class="wow fadeInUp right-half" data-wow-delay="0.1s">
 
       </div>
     </section>
@@ -209,7 +210,7 @@
 
         <div class="wrapper">
           <a href="https://dropbox.com/oauth2/authorize?client_id=ufvt2l8skee9d6x&response_type=code&state=7ab5febd01d5cfe9b8eaf30e956be99f&redirect_uri=https%3A%2F%2Fdevmind.io%2Flogin%2Faccess_dropbox">
-            <div class="bullet" title="Dropbox">
+            <div class="wow bounceIn bullet" title="Dropbox" data-wow-offset="150">
               <svg viewBox="0 0 24 24">
                 <path d="M12,14.56L16.35,18.16L18.2,16.95V18.3L12,22L5.82,18.3V16.95L7.68,18.16L12,14.56M7.68,2.5L12,6.09L16.32,2.5L22.5,6.5L18.23,9.94L22.5,13.36L16.32,17.39L12,13.78L7.68,17.39L1.5,13.36L5.77,9.94L1.5,6.5L7.68,2.5M12,13.68L18.13,9.94L12,6.19L5.87,9.94L12,13.68Z"
                 />
@@ -218,7 +219,7 @@
           </a>
 
           <a href="https://devmind.io/login/request_github">
-            <div class="bullet" title="Github">
+            <div class="wow bounceIn bullet" title="Github" data-wow-delay="0.2s" data-wow-offset="150">
               <svg viewBox="0 0 24 24">
                 <path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"
                 />
@@ -227,13 +228,13 @@
           </a>
 
           <a href="#">
-            <div class="bullet" title="Gitlab">
+            <div class="wow bounceIn bullet" title="Gitlab" data-wow-delay="0.4s" data-wow-offset="150">
 
             </div>
           </a>
 
           <a href="#">
-            <div class="bullet" title="BitBucket">
+            <div class="wow bounceIn bullet" title="BitBucket" data-wow-delay="0.6s" data-wow-offset="150">
               <svg viewBox="0 0 24 24">
                 <path d="M21.43,2C21.79,2.07 22.03,2.42 22,2.82L21.12,8.7L19.27,21.4C19.2,21.75 18.95,22 18.63,22H5.37C5.05,22 4.8,21.75 4.73,21.4L2.88,8.7L2,2.82C1.97,2.42 2.21,2.07 2.57,2H21.43M14.08,15.26L15.1,8.7H8.9L9.92,15.26H14.08Z" />
               </svg>
@@ -270,6 +271,10 @@
     <!-- JAVASCRIPTS -->
     <script src="https://devmind.io/assets/modules/editor-beta/PWA/manifest.json"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/index.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="js/index.js"></script> <!-- Script real da página -->
   </body>
 </html>
