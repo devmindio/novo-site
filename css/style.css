@@ -523,6 +523,14 @@ footer > div {
     height: 300px;
 }
 
+.footer-header {
+    float: left;
+    color: #999;
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
 .footer-logo {
     float: left;
     width: 50%;
