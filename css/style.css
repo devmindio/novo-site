@@ -554,6 +554,7 @@ footer > div {
 	right: 20px;
 	bottom: 20px;
 	border: none;
+    cursor: pointer;
 	background: #FFFFFF;
 	border-radius: 100%;
 	-webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.25);
