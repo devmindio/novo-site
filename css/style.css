@@ -28,7 +28,7 @@ section {
 	padding: 0px;
 	height: 85vh;
 	background-color: #01aaed;
-	background-image: url(../img/fundo-header.jpg);
+	background-image: url("https://i.imgur.com/QPYpOJR.jpg");
 	background-size: cover;
 	background-position: left center;
     transition: all 0.13s ease;
