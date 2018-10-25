@@ -207,7 +207,19 @@ nav > .link {
 }
 
 h2 {
+    text-align: center;
 	color: #01aaed;
+}
+
+.product-description {
+    float: left;
+    width: 80%;
+    height: auto;
+    margin: 50px 10%;
+    color: #333;
+    text-align: center;
+    line-height: 44px;
+    font-size: 30px;
 }
 
 .second > .left {
@@ -525,7 +537,7 @@ h5 {
 footer {
 	float: left;
 	width: 80%;
-	height: 300px;
+	height: 210px;
     padding: 0px 10%;
     display: flex;
     justify-content: space-between;
@@ -536,7 +548,7 @@ footer {
 footer > div {
     float: left;
     width: 32%;
-    height: 300px;
+    height: 210px;
 }
 
 .footer-header {
