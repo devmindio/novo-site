@@ -342,7 +342,13 @@ h3, h4 {
 	height: 80px;
 	border: 3px solid #FFF;
 	border-radius: 100%;
-	background: #01aaed;
+	background-color: #01aaed;
+}
+
+.thiagosv {
+    background-position: center;
+    background-size: cover;
+    background-image: url(../img/users/thiago.jpg);
 }
 
 .carousel > .card > .description {
@@ -366,6 +372,16 @@ h3, h4 {
 	text-align: center;
 	font-size: 16px;
 	border-top: 1px solid #DDD;
+}
+
+.carousel > .card > .name > a {
+    transition: all 0.13s linear;
+    text-decoration: none;
+    color: #000;
+}
+
+.carousel > .card > .name > a:hover {
+    color: #01aaed;
 }
 
 .carousel > .card > span {
@@ -524,6 +540,7 @@ footer > div {
 }
 
 .footer-header {
+    width: 100%;
     float: left;
     color: #999;
     font-size: 20px;
@@ -543,6 +560,46 @@ footer > div {
     font-size: 14px;
     margin-top: 15px;
     color: #999;
+}
+
+.social {
+    width: 36px;
+    height: 36px;
+    float: left;
+    margin: 10px;
+    margin-left: 0px;
+    background: #DDD;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all 0.13s ease;
+}
+
+.social:hover {
+    background: #01aaed;
+}
+
+.social > svg {
+    margin-top: 4px;
+    transition: all 0.13s ease;
+    fill: #888;
+}
+
+.social:hover > svg {
+    fill: #FFF;
+}
+
+.endereco {
+    float: left;
+    width: 100%;
+    height: auto;
+    padding: 10px 0px;
+}
+
+.endereco > .icon {
+    width: 48px;
+    height: 48px;
+    
 }
 
 /* BOTÃO PARA LEVAR AO TOPO */
