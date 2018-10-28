@@ -485,7 +485,7 @@ h5 {
 .ways-to-login {
 	float: right;
 	width: 550px;
-	height: 420px;
+	height: auto;
 	padding: 20px;
 	margin-top: 30px;
 	background: transparent;
@@ -580,7 +580,7 @@ footer > div {
     float: left;
     margin: 10px;
     margin-left: 0px;
-    background: #DDD;
+    background: transparent;
     border: none;
     cursor: pointer;
     border-radius: 3px;
@@ -608,10 +608,10 @@ footer > div {
     padding: 10px 0px;
 }
 
-.endereco > .icon {
+.ende-icon {
+    float: left;
     width: 48px;
     height: 48px;
-    
 }
 
 /* BOTÃO PARA LEVAR AO TOPO */
