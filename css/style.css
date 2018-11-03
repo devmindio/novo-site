@@ -236,13 +236,6 @@ h2 {
     background: #FFF;
 }
 
-.wrapper > .left ul, .wrapper > .right ul {
-    width: 70%;
-    height: auto;
-    
-    color: #FFF;
-}
-
 .wrapper > .left .title, .wrapper > .right .title {
 	width: 100%;
     font-weight: 600;
@@ -259,12 +252,11 @@ h2 {
     color: #444;
     font-size: 18px;
     line-height: 24px;
-    text-align: center;
+    text-align: left;
 }
 
 .wrapper > .right {
 	float: right;
-	background: #0090c9;
 }
 
 
@@ -604,6 +596,51 @@ footer > div > .wrapper {
 	border-radius: 100%;
 	-webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.25);
 	box-shadow: 0 0 10px 0 rgba(0,0,0,0.25);
+}
+
+
+
+/* BARRA PARA MOSTRAR MENSAGEM DE COOKIES */
+.cookie-alert {
+    width: 80%;
+    height: 70px;
+    background: #FFF;
+    position: fixed;
+    padding: 0px;
+    top: auto;
+    left: 10%;
+    right: 10%;
+    bottom: 20px;
+    overflow: hidden;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.25);
+	box-shadow: 0 0 10px 0 rgba(0,0,0,0.25);
+}
+
+.cookie-alert > .description {
+    float: left;
+    color: #444;
+    font-size: 18px;
+    margin: 22px 30px;
+}
+
+.cookie-alert > a {
+    float: right;
+    color: #01aaed;
+    font-size: 18px;
+    margin: 23px 0px;
+    text-decoration: none;
+}
+
+.close-this {
+    float: right;
+    border: none;
+    border-radius: 3px;
+    background: #01aaed;
+    font-size: 18px;
+    color: #FFF;
+    padding: 10px;
+    margin: 12px 15px;
+    cursor: pointer;
 }
 
 /* Scrollbars Personalizadas */
