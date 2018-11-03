@@ -1,3 +1,39 @@
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1024px) {
+    header, section, footer {
+        width: calc(100vw - 10%);
+        padding: 0px 5%;
+    }
     
+    .left-half {
+        width: 45%;
+        margin-left: 5%;
+    }
+    
+    .left-half h1 {
+        font-size: 26px;
+    }
+    
+    .right-half {
+        margin-right: 5%;
+    }
+    
+    .cta-wrapper {
+        width: 100%;
+        margin-top: 60px;
+    }
+    
+    .cta-wrapper > h5, .cta-question {
+        text-align: center;
+    }
+    
+    .ways-to-login {
+        width: 60%;
+        padding: 0px;
+        margin: 0px 20%;
+        margin-top: 60px;
+    }
+    
+    .goTop {
+        right: 5%;
+    }
 }
