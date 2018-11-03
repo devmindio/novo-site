@@ -223,8 +223,9 @@ h2 {
 }
 
 .second > .wrapper {
+    width: 80%;
     float: left;
-    margin-top: 20px;
+    margin: 20px 10%;
 }
 
 .wrapper > .left, .wrapper > .right {
@@ -232,7 +233,7 @@ h2 {
 	width: 50%;
     height: auto;
     padding-bottom: 20px;
-    background: #01aaed;
+    background: #FFF;
 }
 
 .wrapper > .left ul, .wrapper > .right ul {
@@ -247,7 +248,7 @@ h2 {
     font-weight: 600;
     font-size: 22px;
     margin: 20px 0px;
-    color: #FFF;
+    color: #01aaed;
     text-align: center;
 }
 
@@ -255,7 +256,7 @@ h2 {
 	float: left;
     width: 70%;
     margin: 0px 15%;
-    color: #FFF;
+    color: #444;
     font-size: 18px;
     line-height: 24px;
     text-align: center;
