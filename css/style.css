@@ -29,6 +29,7 @@ section {
 	background-color: #01aaed;
 	background-image: url("https://i.imgur.com/QPYpOJR.jpg");
 	background-size: cover;
+    background-attachment: fixed;
 	background-position: left center;
     transition: all 0.13s ease;
 }
