@@ -70,7 +70,7 @@ nav > .link {
 	opacity: 1;
 }
 
-.login {
+.login, .menu {
 	margin-top: 17px;
 	margin-left: 25px;
 	padding: 10px;
@@ -88,7 +88,7 @@ nav > .link {
 	opacity: 1;
 }
 
-.login svg {
+.login svg, .menu svg {
 	float: left;
 	width: 24px;
 	height: 24px;
@@ -100,6 +100,11 @@ nav > .link {
 	margin: 0px 10px;
 	margin-top: 1px;
 	font-size: 16px;
+}
+
+.menu {
+    float: right;
+    display: none;
 }
 
 /* HEADER DESTACADO */
@@ -123,7 +128,7 @@ nav > .link {
 }
 
 .detach nav > .link {
-	color: #CCC;
+	color: #999;
 	opacity: 1;
 }
 
@@ -131,22 +136,22 @@ nav > .link {
 	color: #01aaed;
 }
 
-.detach .login {
+.detach .login, .menu {
 	color: #01aaed;
 	border: 1px solid #01aaed;
 	opacity: 1;
 }
 
-.detach .login:hover {
+.detach .login:hover, .menu:hover {
     color: #FFF;
 	background: #01aaed;
 }
 
-.detach .login svg {
+.detach .login svg, .menu svg {
 	fill: #01aaed;
 }
 
-.detach .login:hover > svg {
+.detach .login:hover > svg, .menu:hover > svg {
     fill: #FFF;
 }
 
@@ -336,7 +341,7 @@ h3, h4 {
 	width: 80%;
 	margin-left: 10%;
 	text-align: center;
-	font-size: 20px;
+	font-size: 18px;
 	color: #555;
 	padding: 20px 0px;
 	padding-top: 60px;
@@ -563,7 +568,6 @@ footer > div > .wrapper {
     height: 40px;
     float: left;
     margin: 10px;
-    margin-left: 0px;
     background: transparent;
     border: none;
     cursor: pointer;
