@@ -18,12 +18,12 @@ body {
 section {
 	float: left;
 	position: relative;
-	width: calc(100vw - 20%);
+	width: 80%;
 	padding: 0px 10%;
 }
 
 .first {
-	width: 100vw;
+	width: 100%;
 	padding: 0px;
 	height: 85vh;
 	background-color: #01aaed;
@@ -271,15 +271,82 @@ h2 {
 }
 
 /* TERCEIRA SEÇÃO */
-.third {
+.third > .wrapper {
+	position: relative;
 	float: left;
-	padding-bottom: 50px;
+	width: 100%;
+	height: auto;
+    margin-bottom: 50px;
+}
+
+.left-side {
+    position: relative;
+    float: left;
+	width: 50%;
+	height: 50vh;
+    z-index: 2;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+	box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+}
+
+.programmer-left {
+	background: no-repeat url(../img/workspace.png);
+    background-size: cover;
+}
+
+.panel-left {
+	background: no-repeat url(../img/painel.png);
+    background-size: cover;
+}
+
+.right-side {
+	position: relative;
+	float: right;
+	width: 50%;
+	height: 50vh;
+    z-index: 1;
+}
+
+.right-side .title {
+    width: 60%;
+    margin: 25px 70px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #01aaed;
+}
+
+.right-side .description {
+    width: 65%;
+    margin: 0px 70px;
+    font-size: 18px;
+    color: #999;
+}
+
+.right-side .more {
+    margin-top: 40px;
+	margin-left: 70px;
+	padding: 10px;
+	border-radius: 3px;
+	cursor: pointer;
+	opacity: 0.85;
+    background: #FFF;
+    font-size: 18px;
+    color: #01aaed;
+    border: 1px solid #01aaed;
+    opacity: 1;
+	transition: all 0.13s ease;
+}
+
+.right-side .more:hover {
+	color: #FFF;
+    background: #01aaed;
 }
 
 h3, h4 {
 	width: 100%;
 	font-size: 32px;
 	text-align: center;
+    margin-bottom: 40px;
 	color: #01aaed;
 }
 
@@ -334,6 +401,12 @@ h3, h4 {
     background-position: center;
     background-size: cover;
     background-image: url(../img/users/thiago.jpg);
+}
+
+.liviass {
+    background-position: center;
+    background-size: cover;
+    background-image: url(../img/users/livia.jpg);
 }
 
 .carousel > .card > .description {
@@ -414,12 +487,12 @@ h3, h4 {
 	margin-bottom: 0px;
 	height: 500px;
     background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 100%), url(../img/bg-mobile.png) left 60% no-repeat;
-    background-size: auto 100%;
+    background-size: 100% auto;
 }
 
 .cta-wrapper {
 	float: left;
-	width: 40%;
+	width: 45%;
 	height: auto;
 	margin-top: 170px;
 }
