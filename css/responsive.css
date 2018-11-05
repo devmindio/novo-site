@@ -110,4 +110,8 @@
         width: 80%;
         margin: 50px 10%;
     }
+    
+    footer > div {
+        width: 100%;
+    }
 }
