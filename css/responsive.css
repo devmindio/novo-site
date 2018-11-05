@@ -96,10 +96,18 @@
     }
     
     nav {
+        display: none;
         width: 100%;
     }
     
     .menu {
         display: block;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        width: 80%;
+        margin: 50px 10%;
     }
 }
