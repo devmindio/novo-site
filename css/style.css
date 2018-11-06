@@ -84,8 +84,17 @@ nav > .link {
 }
 
 .login:hover {
+    background: #FFF;
 	border: 1px solid #FFF;
 	opacity: 1;
+}
+
+.login:hover > span {
+    color: #01aaed;
+}
+
+.login:hover > svg {
+    fill: #01aaed;
 }
 
 .login svg, .menu svg {
@@ -147,6 +156,10 @@ nav > .link {
 	background: #01aaed;
 }
 
+.detach .login:hover > span {
+    color: #FFF;
+}
+
 .detach .login svg, .menu svg {
 	fill: #01aaed;
 }
@@ -182,7 +195,7 @@ nav > .link {
 	cursor: pointer;
 	float: left;
 	margin-top: 40px;
-	padding: 10px 20px;
+	padding: 10px 25px;
     font-size: 18px;
 	color: #FFF;
 	background: transparent;
@@ -325,7 +338,7 @@ h2 {
 .right-side .more {
     margin-top: 40px;
 	margin-left: 70px;
-	padding: 10px;
+	padding: 10px 25px;
 	border-radius: 3px;
 	cursor: pointer;
 	opacity: 0.85;
@@ -376,12 +389,13 @@ h3, h4 {
 	float: left;
 	position: relative;
 	width: 30%;
+    min-height: 260px;
 	height: auto;
 	margin-top: 65px;
 	-webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
 	box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
 	border-radius: 10px;
-	padding-bottom: 15px;
+	padding-bottom: 80px;
 }
 
 .carousel > .card > .img {
@@ -416,11 +430,12 @@ h3, h4 {
 	text-align: center;
 	font-size: 18px;
 	color: #555;
-	padding: 20px 0px;
+	padding: 15px 0px;
 	padding-top: 60px;
 }
 
 .carousel > .card > .name, .carousel > .card > span {
+    position: absolute;
 	float: left;
 	width: 70%;
 	height: auto;
@@ -428,25 +443,27 @@ h3, h4 {
 	padding-top: 10px;
 	padding-bottom: 5px;
 	text-align: center;
-	font-size: 16px;
+	font-size: 20px;
 	border-top: 1px solid #DDD;
+    bottom: 30px;
 }
 
 .carousel > .card > .name > a {
     transition: all 0.13s linear;
     text-decoration: none;
-    color: #000;
-}
-
-.carousel > .card > .name > a:hover {
     color: #01aaed;
 }
 
+.carousel > .card > .name > a:hover {
+    color: #000;
+}
+
 .carousel > .card > span {
+    bottom: 10px;
 	border: none;
 	padding: 0px;
 	color: #999;
-	font-size: 14px;
+	font-size: 16px;
 	display: block;
 }
 
@@ -511,25 +528,12 @@ h5 {
 }
 
 .cta-question {
-	font-size: 44px;
+	font-size: 40px;
 }
-
-/*.ways-to-login {
-	float: right;
-	width: 300px;
-	height: 420px;
-	padding: 20px;
-	margin-top: -55px;
-	background: #FFF;
-	border-radius: 10px;
-	overflow: hidden;
-	-webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.25);
-	box-shadow: 0 0 10px 0 rgba(0,0,0,0.25);
-}*/
 
 .ways-to-login {
 	float: right;
-	width: 550px;
+	width: calc(50% - 40px);
 	height: auto;
 	padding: 20px;
 	margin-top: 90px;
@@ -620,7 +624,7 @@ footer > div {
 
 .credits {
     float: right;
-    width: 60%;
+    width: 70%;
     font-size: 15px;
     margin-top: 30px;
     color: #999;

@@ -14,7 +14,30 @@
     }
     
     .right-half {
+        height: 50%;
+        background-size: 100%;
         margin-right: 5%;
+    }
+    
+    .diferenciais > .card {
+        width: 33.3%;
+    }
+    
+    .right-side .title {
+        width: 75%;
+    }
+    
+    .carousel > .card {
+        width: 32%;
+    }
+    
+    .carousel > .card > .description {
+        width: 90%;
+        margin-left: 5%;
+    }
+    
+    .call-to-action {
+        background-size: cover;
     }
     
     .cta-wrapper {
