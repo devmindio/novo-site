@@ -3,12 +3,14 @@
     src: url(https://devmind.io/assets/modules/editor-beta/Brandon_Grotesque/Brandon_reg.otf);
 }
 
+/* RESET */
 * {
 	margin: 0px;
 	padding: 0px;
 	font-family: "Brandon Grotesque", "Brandonreg", sans-serif;
 }
 
+/* ESTILOS PADRÃO */
 body {
 	overflow-x: hidden;
 	overflow-y: auto;
@@ -22,21 +24,12 @@ section {
 	padding: 0px 10%;
 }
 
-.first {
-	width: 100%;
-	padding: 0px;
-	height: 85vh;
-	background-color: #01aaed;
-	background-image: url("https://i.imgur.com/QPYpOJR.jpg");
-	background-size: cover;
-    background-attachment: fixed;
-	background-position: left center;
-    transition: all 0.13s ease;
-}
-
 /* HEADER PADRÃO */
 header {
-	float: left;
+	position: fixed;
+    z-index: 9999;
+    top: 0px;
+    left: 0px;
 	width: 80%;
 	height: 79px;
 	padding: 0px 10%;
@@ -51,11 +44,11 @@ header .logo {
 	background: url("../img/devlogo.png") center no-repeat;
 }
 
-header > nav {
+header > .desktop {
 	float: right;
 }
 
-nav > .link {
+.desktop > .link {
 	float: left;
 	margin-top: 29px;
 	margin-left: 25px;
@@ -116,12 +109,25 @@ nav > .link {
     display: none;
 }
 
+.mobile {
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+.mobile > .link {
+	float: left;
+    width: calc(100% - 40px);
+    margin-top: 20px;
+    text-align: center;
+    padding: 0px;
+	font-size: 20px;
+    text-decoration: none;
+	transition: all 0.13s ease;
+}
+
 /* HEADER DESTACADO */
 .detach {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    z-index: 9999;
     background-color: #FFF;
     -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.25);
 	box-shadow: 0 0 10px 0 rgba(0,0,0,0.25);
@@ -168,11 +174,31 @@ nav > .link {
     fill: #FFF;
 }
 
+/* HEADER ABERTO - MOBILE */
+.open {
+    height: 100vh;
+}
+
+.open > .mobile {
+    display: block;
+}
+
+/* PRIMEIRA SEÇÃO */
+.first {
+	height: calc(85vh - 80px);
+    padding-top: 80px;
+	background-color: #01aaed;
+	background-image: url("https://i.imgur.com/QPYpOJR.jpg");
+	background-size: cover;
+    background-attachment: fixed;
+	background-position: left center;
+    transition: all 0.13s ease;
+}
+
 .left-half {
 	float: left;
-	width: 40%; 
-	margin-top: 15vh;
-	margin-left: 10%;
+	width: 50%; 
+	margin-top: 18vh;
 	color: #FFF;
 }
 
@@ -211,10 +237,9 @@ nav > .link {
 
 .right-half {
 	float: right;
-	width: 40%;
+	width: 46%;
 	height: 60%;
-	margin-right: 10%;
-	margin-top: 11vh;
+	margin-top: 14vh;
 	background: center no-repeat url("../img/devmind-interface.png");
 	background-size: 90%;
 }

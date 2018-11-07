@@ -2,7 +2,11 @@ $(document).ready(function(){
     $(".goTop").click(function() {
       $("html, body").animate({ scrollTop: 0 }, 400);
     });
-
+    
+    $(".menu").click(function() {
+      $("header").toggleClass("open"), 100;
+    });
+    
     if ($(window).width() > 900) {
         $(document).scroll(function() {
             var y = $(this).scrollTop();
