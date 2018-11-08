@@ -14,7 +14,6 @@
 body {
 	overflow-x: hidden;
 	overflow-y: auto;
-	letter-spacing: 1px;
 }
 
 section {
@@ -260,10 +259,11 @@ h2 {
     width: 80%;
     height: auto;
     margin: 50px 10%;
-    color: #333;
-    text-align: center;
+    color: #999;
+    text-align: left;
+    letter-spacing: -1px;
     line-height: 44px;
-    font-size: 30px;
+    font-size: 29px;
 }
 
 .diferenciais {
@@ -313,8 +313,12 @@ h2 {
 	position: relative;
 	float: left;
 	width: 100%;
-	height: auto;
+	height: 70vh;
     margin-bottom: 50px;
+}
+
+.reverse {
+    margin-top: 40px;
 }
 
 .left-side {
@@ -325,6 +329,14 @@ h2 {
     z-index: 2;
     -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
 	box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+}
+
+.reverse .left-side {
+    position: relative;
+	float: right;
+	width: 50%;
+	height: 50vh;
+    z-index: 1;
 }
 
 .programmer-left {
@@ -343,6 +355,14 @@ h2 {
 	width: 50%;
 	height: 50vh;
     z-index: 1;
+}
+
+.reverse .right-side {
+	position: relative;
+    float: left;
+	width: 50%;
+	height: 50vh;
+    z-index: 2;
 }
 
 .right-side .title {
@@ -536,7 +556,7 @@ h3, h4 {
 	float: left;
 	width: 45%;
 	height: auto;
-	margin-top: 170px;
+	margin-top: 190px;
 }
 
 .cta-wrapper > h5, .cta-question {
@@ -544,15 +564,16 @@ h3, h4 {
 	float: left;
 	width: 100%;
 	height: auto;
-	font-weight: 500;
+    font-weight: 400;
 	margin-bottom: 6px;
 }
 
 h5 {
-	font-size: 20px;
+    font-size: 20px;
 }
 
 .cta-question {
+    font-weight: 500;
 	font-size: 40px;
 }
 
@@ -590,7 +611,8 @@ h5 {
 	margin-top: 45px;
 	border-radius: 100%;
 	background: #FFF;
-	transition: all 0.13s ease;
+	cursor: pointer;
+    transition: all 0.13s ease;
 	-webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.25);
 	box-shadow: 0 0 10px 0 rgba(0,0,0,0.25);
 }
@@ -642,7 +664,7 @@ footer > div {
 
 .footer-logo {
     float: left;
-    width: 60%;
+    width: 62%;
     height: auto;
     margin-top: 25px;
 }
