@@ -104,25 +104,59 @@ header > .desktop {
 }
 
 .menu {
-    float: right;
+    position: absolute;
+    left: 0px;
+    bottom: 17px;
     display: none;
 }
 
 .mobile {
+    position: fixed;
     width: 100%;
-    height: auto;
-    display: none;
+    height: calc(100vh - 80px);
+    top: 80px;
+    left: -110%;
+    background: rgba(1, 170, 237, 0.55);
+    z-index: 9998;
+    transition: all 0.13s ease;
 }
 
 .mobile > .link {
 	float: left;
-    width: calc(100% - 40px);
+    width: 70%;
     margin-top: 20px;
+    margin-left: 15%;
     text-align: center;
-    padding: 0px;
-	font-size: 20px;
+    padding: 10px;
+	font-size: 6vmin;
+    color: #01aaed;
+    background: #FFF;
+    border-radius: 3px;
     text-decoration: none;
 	transition: all 0.13s ease;
+}
+
+.mobile > a > .login {
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 0px;
+    bottom: 0px;
+    margin: 0px;
+    background-color: #FFFFFF;
+}
+
+.mobile > a > .login > svg {
+    fill: #01aaed;
+    width: 44px;
+    height: 44px;
+    margin: 8px;
+}
+
+.mobile > a > .login > span {
+    font-size: 40px;
+    color: #01aaed;
 }
 
 /* HEADER DESTACADO */
@@ -173,17 +207,15 @@ header > .desktop {
     fill: #FFF;
 }
 
-/* HEADER ABERTO - MOBILE */
+/* NAVEGAÇÃO ABERTA - MOBILE */
 .open {
-    height: 100vh;
-}
-
-.open > .mobile {
-    display: block;
+    left: 0px;
 }
 
 /* PRIMEIRA SEÇÃO */
 .first {
+    position: relative;
+    overflow: hidden;
 	height: calc(85vh - 80px);
     padding-top: 80px;
 	background-color: #01aaed;
@@ -235,10 +267,11 @@ header > .desktop {
 }
 
 .right-half {
-	float: right;
+	position: absolute;
 	width: 46%;
 	height: 60%;
-	margin-top: 14vh;
+	top: 24vh;
+    right: 10%;
 	background: center no-repeat url("../img/devmind-interface.png");
 	background-size: 90%;
 }

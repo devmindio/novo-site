@@ -4,7 +4,7 @@ $(document).ready(function(){
     });
     
     $(".menu").click(function() {
-      $("header").toggleClass("open"), 100;
+      $(".mobile").toggleClass("open");
     });
     
     if ($(window).width() > 900) {

@@ -1,6 +1,6 @@
 @media screen and (max-width: 1024px) {
     header, section, footer {
-        width: calc(100vw - 10%);
+        width: 90%;
         padding: 0px 5%;
     }
     
@@ -13,6 +13,7 @@
     }
     
     .right-half {
+        right: 5%;
         height: 50%;
         background-size: 100%;
     }
@@ -27,11 +28,6 @@
     
     .carousel > .card {
         width: 32%;
-    }
-    
-    .carousel > .card > .description {
-        width: 90%;
-        margin-left: 5%;
     }
     
     .call-to-action {
@@ -125,10 +121,16 @@
     
     .menu {
         display: block;
-        position: absolute;
-        right: 5%;
-        bottom: 17px;
     }
+    
+    .carousel > .card > .description {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    
 }
 
 @media screen and (max-width: 480px) {
