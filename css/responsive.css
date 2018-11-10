@@ -6,7 +6,6 @@
     
     .left-half {
         width: 45%;
-        margin-left: 5%;
     }
     
     .left-half h1 {
@@ -16,7 +15,6 @@
     .right-half {
         height: 50%;
         background-size: 100%;
-        margin-right: 5%;
     }
     
     .diferenciais > .card {
