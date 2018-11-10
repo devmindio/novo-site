@@ -144,6 +144,8 @@ header > .desktop {
     left: 0px;
     bottom: 0px;
     margin: 0px;
+    display: flex;
+    justify-content: center;
     background-color: #FFFFFF;
 }
 
@@ -242,7 +244,7 @@ header > .desktop {
 
 .left-half p {
 	width: 85%;
-	letter-spacing: 1px;
+    float: left;
 	line-height: 20px;
 	font-size: 18px;
 }

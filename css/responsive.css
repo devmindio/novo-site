@@ -1,3 +1,4 @@
+/* QUERIES BASEADOS NA LARGURA */
 @media screen and (max-width: 1024px) {
     header, section, footer {
         width: 90%;
@@ -130,7 +131,63 @@
 }
 
 @media screen and (max-width: 800px) {
+    .mobile > .link {
+        font-size: 5vmin;
+    }
     
+    .first {
+        height: 100vh;
+    }
+    
+    .left-half {
+        width: 60%;
+        margin-left: 20%;
+        margin-top: 30px;
+    }
+    
+    .left-half h1 {
+        font-size: 23px;
+        text-align: center;
+    }
+    
+    .left-half p {
+        width: 100%;
+        font-size: 17px;
+        text-align: center;
+    }
+    
+    .left-half button {
+        width: 50%;
+        margin-left: 25%;
+    }
+    
+    .right-half {
+        width: 60%;
+        right: 20%;
+        top: auto;
+        bottom: 0px;
+    }
+    
+    .diferenciais > .card {
+        width: 31%;
+    }
+    
+    .diferenciais > .card > svg {
+        float: left;
+        width: 50%;
+        height: 48px;
+        margin: 20px 25%;
+    }
+    
+    .diferenciais > .card > .title, .diferenciais > .card > .description {
+        width: 100%;
+        font-size: 24px;
+        text-align: center;
+    }
+    
+    .diferenciais > .card > .description {
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -146,5 +203,13 @@
     
     footer > div {
         width: 100%;
+    }
+}
+
+
+/* QUERIES BASEADOS NA ALTURA */
+@media screen and (min-height: 1024px) {
+    .first {
+        height: 60vh;
     }
 }
