@@ -124,17 +124,17 @@
         display: block;
     }
     
+    .mobile {
+        width: 50%;
+    }
+    
     .carousel > .card > .description {
         width: 90%;
         margin-left: 5%;
     }
 }
 
-@media screen and (max-width: 800px) {
-    .mobile > .link {
-        font-size: 5vmin;
-    }
-    
+@media screen and (max-width: 800px) { 
     .first {
         height: 95vh;
     }
@@ -341,6 +341,10 @@
 }
 
 @media screen and (max-width: 480px) {
+    .mobile {
+        width: 80%;
+    }
+    
     .right-half {
         width: 90%;
         right: 5%;

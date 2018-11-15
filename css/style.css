@@ -112,52 +112,59 @@ header > .desktop {
 
 .mobile {
     position: fixed;
-    width: 100%;
-    height: calc(100vh - 80px);
+    width: 80%;
+    height: calc(100vh - 120px);
+    padding-top: 40px;
     top: 80px;
-    left: -110%;
-    background: rgba(1, 170, 237, 0.55);
+    left: -100%;
+    background: #FFF;
     z-index: 9998;
+    opacity: 0;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.25);
+	box-shadow: 0 0 10px 0 rgba(0,0,0,0.25);
     transition: all 0.13s ease;
 }
 
 .mobile > .link {
 	float: left;
-    width: 70%;
-    margin-top: 20px;
-    margin-left: 15%;
-    text-align: center;
+    width: calc(90% - 20px);
+    margin-left: 10%;
+    text-align: left;
     padding: 10px;
-	font-size: 6vmin;
-    color: #01aaed;
-    background: #FFF;
-    border-radius: 3px;
+	font-size: 22px;
+    color: #999;
     text-decoration: none;
 	transition: all 0.13s ease;
+}
+
+.mobile > .link:hover {
+    color: #01aaed;
 }
 
 .mobile > a > .login {
     opacity: 1;
     position: absolute;
-    width: 100%;
+    width: 80%;
     height: auto;
-    left: 0px;
-    bottom: 0px;
+    left: 10%;
+    bottom: 25px;
     margin: 0px;
+    border-radius: 3px;
     display: flex;
+    vertical-align: middle;
     justify-content: center;
-    background-color: #FFFFFF;
+    border: 1px solid #01aaed;
 }
 
 .mobile > a > .login > svg {
     fill: #01aaed;
-    width: 44px;
-    height: 44px;
-    margin: 8px;
+    width: 32px;
+    height: 32px;
 }
 
 .mobile > a > .login > span {
-    font-size: 40px;
+    margin-top: 5px;
+    font-size: 16px;
     color: #01aaed;
 }
 
@@ -211,6 +218,7 @@ header > .desktop {
 
 /* NAVEGAÇÃO ABERTA - MOBILE */
 .open {
+    opacity: 1;
     left: 0px;
 }
 
