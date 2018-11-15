@@ -270,10 +270,10 @@ header > .desktop {
 
 .right-half {
 	position: absolute;
-	width: 46%;
-	height: 60%;
+	width: 45%;
+	height: 400px;
 	top: 24vh;
-    right: 10%;
+    right: 8%;
 	background: center no-repeat url("../img/devmind-interface.png");
 	background-size: 90%;
 }
@@ -739,6 +739,8 @@ footer > div > .wrapper {
 }
 
 .social > svg {
+    width: 24px;
+    height: 24px;
     margin-top: 4px;
     transition: all 0.13s ease;
     fill: #888;
