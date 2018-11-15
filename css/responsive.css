@@ -136,7 +136,7 @@
     }
     
     .first {
-        height: 100vh;
+        height: 95vh;
     }
     
     .left-half {
@@ -200,6 +200,27 @@
         font-size: 16px;
     }
     
+    .third > .wrapper {
+        height: auto;
+        margin-bottom: 110px;
+    }
+    
+    .left-side, .reverse .left-side {
+        position: relative;
+        float: left;
+        width: 100%;
+        height: 350px;
+        clear: both;
+    }
+    
+    .right-side, .reverse .right-side {
+        position: relative;
+        float: left;
+        width: 100%;
+        min-height: 300px;
+        height: auto;
+    }
+    
     .carousel {
         display: block;
     }
@@ -249,21 +270,96 @@
     }
     
     .credits {
-        margin: 25px auto;
+        margin: 10px auto;
         text-align: center;
-        font-size: 3vmin;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    header .logo, .detach .logo {
+        width: 50%;
+    }
+    
+    .left-half {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 30px;
+    }
+    
+    .left-half button {
+        width: 100%;
+        margin-left: 0%;
+    }
+    
+    h2 {
+        width: 90%;
+        margin-left: 5%;
+        text-align: left;
+    }
+    
+    .product-description {
+        width: 90%;
+        margin-left: 5%;
+        letter-spacing: 0px;
+        line-height: normal;
+        font-size: 6vmin;
+    }
+    
+    .ways-to-login {
+        width: 80%;
+        margin: 0px 10%;
+        margin-top: 60px;
+    }
+    
+    footer > div {
+        height: auto;
+        margin-bottom: 20px;
+    }
+    
+    footer > div > .wrapper {
+        position: relative;
+        margin-top: 0px;
+    }
+    
+    .footer-logo {
+        float: left;
+        width: 60%;
+        margin: 20px 20%;
+        margin-bottom: 0px;
+    }
+    
+    .social {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .social > svg {
+        width: 35px;
+        height: 35px;
     }
 }
 
 @media screen and (max-width: 480px) {
+    .right-half {
+        width: 90%;
+        right: 5%;
+        height: 250px;
+    }
+    
+    .right-side .title, .right-side .description, .right-side .more {
+        width: 100%;
+        margin-left: 0px;
+    }
+    
     .carousel {
         width: 100%;
         height: auto;
     }
     
     .carousel .card {
-        width: 80%;
-        margin: 50px 10%;
+        width: 90%;
+        margin: 50px 5%;
     }
     
     footer > div {
