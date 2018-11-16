@@ -1,0 +1,88 @@
+.first {
+    height: 40vh !important;
+    background-position: center -200px;
+}
+
+.first h1, .first .description {
+    float: left;
+    width: 100%;
+    text-align: center;
+    color: #FFF;
+    margin-top: 55px;
+    font-size: 44px;
+}
+
+.first .description {
+    float: left;
+    width: 40%;
+    margin: 25px 30%;
+    font-size: 18px;
+}
+
+.contact-form {
+    float: left;
+    width: 45%;
+    height: auto;
+    padding: 60px 30px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
+}
+
+input[type="text"], input[type="tel"], input[type="email"], textarea {
+    float: left;
+    border-radius: 3px;
+    border: 1px solid #999;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+}
+
+input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus, textarea:focus {
+    border: 1px solid #01aaed;
+}
+
+#name, #message {
+    width: calc(100% - 20px);
+}
+
+#email, #phone {
+    width: calc(48% - 20px);
+    margin: 20px 0px;
+}
+
+#phone {
+    float: right;
+}
+
+#message {
+    min-width: calc(100% - 20px);
+    max-width: calc(100% - 20px);
+    min-height: 160px;
+    max-height: 300px;
+}
+
+.submit {
+	letter-spacing: 1px;
+	cursor: pointer;
+	float: left;
+	margin-top: 40px;
+    margin-left: calc(50% - 51px);
+	padding: 10px 25px;
+    font-size: 18px;
+	color: #01aaed;
+	background: transparent;
+    transition: all 0.13s linear;
+	border: 1px solid #01aaed;
+	border-radius: 3px;
+}
+
+.submit:hover {
+    color: #FFF;
+    background: #01aaed;
+}
+
+.maps {
+    float: right;
+    border: none;
+    width: 45%;
+    height: 400px;
+}

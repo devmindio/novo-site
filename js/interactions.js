@@ -18,7 +18,7 @@ $(document).ready(function(){
     if ($(window).width() > 900) {
         $(document).scroll(function() {
             var y = $(this).scrollTop();
-            if (y > 100) {
+            if (y > 1) {
                 $(".goTop").fadeIn();
                 $("header").addClass("detach");
             } else {
