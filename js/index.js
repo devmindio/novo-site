@@ -1,4 +1,12 @@
+var myQuote = new Array();
+    myQuote[0] = "Trabalhar de qualquer lugar?";
+    myQuote[1] = "Editar diretamente na nuvem?";
+    myQuote[2] = "Trabalhar com mais facilidade?";
+
 $(document).ready(function(){
+    var myRandom = Math.floor(Math.random()*myQuote.length);
+    $('.cta-question').html(myQuote[myRandom]);
+
     $(".goTop").click(function() {
       $("html, body").animate({ scrollTop: 0 }, 400);
     });
