@@ -1,0 +1,46 @@
+{
+  "name": "Devmind.io",
+  "short_name": "Devmind.io",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url":"https://devmind.io/login",
+  "background_color": "#00638E",
+  "theme_color": "#01aaed",
+  "icons": [
+      {
+      "src": "https://devmind.io/assets/img/pwa/logo-64.png",
+      "type": "image/png",
+      "sizes": "64x64"
+    },
+    {
+      "src": "https://devmind.io/assets/img/pwa/logo-96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "https://devmind.io/assets/img/pwa/logo-128.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "https://devmind.io/assets/img/pwa/logo-144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "https://devmind.io/assets/img/pwa/logo-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://devmind.io/assets/img/pwa/logo-256.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "https://devmind.io/assets/img/pwa/logo-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
