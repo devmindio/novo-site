@@ -305,7 +305,7 @@
         line-height: normal;
         font-size: 6vmin;
     }
-    
+
     .ways-to-login {
         width: 80%;
         margin: 0px 10%;
@@ -356,6 +356,12 @@
         margin-left: 0px;
     }
     
+    .diferenciais > .card, .diferenciais > .card:nth-child(even) {
+        width: 90%;
+        height: 260px;
+        margin: 0px 5%;
+    }
+
     .carousel {
         width: 100%;
         height: auto;
