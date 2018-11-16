@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Brandonreg";
-    src: url(https://devmind.io/assets/modules/editor-beta/Brandon_Grotesque/Brandon_reg.otf);
+    src: url(../fonts/Brandon_reg.otf);
 }
 
 /* RESET */
@@ -622,7 +622,7 @@ h5 {
 
 .ways-to-login {
 	float: right;
-	width: calc(50% - 40px);
+	width: calc(55% - 40px);
 	height: auto;
 	padding: 20px;
 	margin-top: 90px;
