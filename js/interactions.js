@@ -3,6 +3,8 @@ var myQuote = new Array();
     myQuote[1] = "Editar diretamente na nuvem?";
     myQuote[2] = "Trabalhar com mais facilidade?";
 
+$(this).scrollTop(0);
+
 $(document).ready(function(){
     var myRandom = Math.floor(Math.random()*myQuote.length);
     $('.cta-question').html(myQuote[myRandom]);
@@ -18,7 +20,7 @@ $(document).ready(function(){
     if ($(window).width() > 900) {
         $(document).scroll(function() {
             var y = $(this).scrollTop();
-            if (y > 1) {
+            if (y > 10) {
                 $(".goTop").fadeIn();
                 $("header").addClass("detach");
             } else {
