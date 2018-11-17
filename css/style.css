@@ -104,6 +104,7 @@ header > .desktop {
 }
 
 .menu {
+    border: none !important;
     position: absolute;
     left: 0px;
     bottom: 17px;
