@@ -31,6 +31,7 @@
     padding: 60px 30px;
     border: 1px solid #DDD;
     border-radius: 3px;
+    overflow: hidden;
 }
 
 input[type="text"], input[type="tel"], input[type="email"], textarea {
@@ -162,5 +163,16 @@ input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus, te
     
     .first .description {
         font-size: 20px;
+    }
+}
+
+@media screen and (max-height: 740px) {
+    .first {
+        background-position: center;
+        height: 360px !important;    
+    }
+    
+    .first h1 {
+        font-size: 40px;
     }
 }
