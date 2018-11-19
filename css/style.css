@@ -598,7 +598,7 @@ h3, h4 {
 	margin: 40px 0px;
 	margin-bottom: 0px;
 	height: 500px;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 100%), url(../img/bg-mobile.png) left 60% no-repeat;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 100%), url(../img/bg-mobile.jpg) left 60% no-repeat;
     background-size: 100% auto;
 }
 
