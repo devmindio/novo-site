@@ -503,13 +503,19 @@ h3, h4 {
 .thiagosv {
     background-position: center;
     background-size: cover;
-    background-image: url(../img/users/thiago.jpg);
+    background-image: url("../img/users/thiago.jpg");
 }
 
 .liviass {
     background-position: center;
     background-size: cover;
-    background-image: url(../img/users/livia.jpg);
+    background-image: url("../img/users/livia.jpg");
+}
+
+.erick {
+    background-position: center;
+    background-size: cover;
+    background-image: url("../img/users/erick.jpg");
 }
 
 .carousel > .card > .description {
