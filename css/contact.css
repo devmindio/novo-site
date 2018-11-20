@@ -19,8 +19,8 @@
     font-size: 18px;
 }
 
-.second `{
-    min-height: 100vh;
+.second {
+    padding-bottom: 60px;
     height: auto;
 }
 
@@ -28,10 +28,12 @@
     float: left;
     width: 45%;
     height: auto;
+    background: #FFF;
+    margin-top: -75px;
     padding: 60px 30px;
-    border: 1px solid #DDD;
     border-radius: 3px;
     overflow: hidden;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
 }
 
 input[type="text"], input[type="tel"], input[type="email"], textarea {
@@ -174,5 +176,11 @@ input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus, te
     
     .first h1 {
         font-size: 40px;
+    }
+    
+    .contact-form {
+        width: calc(100% - 40px);
+        margin-top: 0px;
+        padding: 20px;
     }
 }

@@ -1,0 +1,37 @@
+.first {
+    height: 330px !important;
+    background-position: center -200px;
+}
+
+.first h1, .first .description {
+    float: left;
+    width: 100%;
+    text-align: center;
+    color: #FFF;
+    margin-top: 55px;
+    font-size: 44px;
+}
+
+.first .description {
+    float: left;
+    width: 40%;
+    margin: 25px 30%;
+    font-size: 18px;
+}
+
+.second {
+    min-height: 100vh;
+    height: auto;
+}
+
+.card-holder {
+    float: left;
+    width: 60%;
+    height: auto;
+    margin: 0px 20%;
+    padding-bottom: 30px;
+}
+
+.card-holder > .card {
+    
+}
