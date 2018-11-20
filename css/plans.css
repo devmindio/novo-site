@@ -29,9 +29,32 @@
     width: 60%;
     height: auto;
     margin: 0px 20%;
+    margin-top: -75px;
     padding-bottom: 30px;
 }
 
 .card-holder > .card {
-    
+    float: left;
+    width: 49%;
+    height: 200px;
+    background: #FFF;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
+}
+
+.card-holder > .card:nth-child(even) {
+    float: right;
+}
+
+.card > .title, .card > .price {
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 15px;
+    color: #01aaed;
+}
+
+.card > .price {
+    margin-top: 20px;
+    font-size: 44px;
 }
