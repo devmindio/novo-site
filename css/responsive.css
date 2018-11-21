@@ -276,10 +276,6 @@
 }
 
 @media screen and (max-width: 640px) {
-    header .logo, .detach .logo {
-        width: 50%;
-    }
-    
     .left-half {
         width: 90%;
         margin-left: 5%;
@@ -373,66 +369,6 @@
     
     footer > div {
         width: 100%;
-    }
-}
-
-
-/* QUERIES BASEADOS NA ALTURA */
-@media screen and (min-height: 1024px) and (orientation: landscape) {
-    .first {
-        height: 500px;
-        background-position: 0px -5px;
-        background-size: 120% auto;
-    }
-    
-    .left-half {
-        width: 49%;
-        margin-top: 120px;
-    }
-    
-    .right-half {
-        top: 176px;
-    }
-    
-    .third > .wrapper {
-        height: auto;
-        padding-bottom: 50px;
-    }
-    
-    .reverse .left-side, .reverse .right-side, .left-side, .right-side {
-        height: 380px;
-    }
-}
-
-@media screen and (min-height: 1080px) and (orientation: portrait) {
-    .first {
-        height: 500px;
-        background-position: 0px -5px;
-        background-size: 120% auto;
-    }
-    
-    .left-half {
-        width: 49%;
-        margin-top: 120px;
-    }
-    
-    .right-half {
-        top: 176px;
-    }
-    
-    .third > .wrapper {
-        height: auto;
-        padding-bottom: 50px;
-    }
-    
-    .reverse .left-side, .reverse .right-side, .left-side, .right-side {
-        height: 380px;
-    }
-}
-
-@media screen and (max-height: 780px) and (orientation: portrait) {
-    .first {
-        height: calc(100vh - 80px);
     }
 }
 

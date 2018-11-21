@@ -39,15 +39,12 @@
     width: 49%;
     height: 430px;
     background: #FFF;
+    border-radius: 3px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
 }
 
 .card-holder > .card:nth-child(even) {
     float: right;
-}
-
-.premium {
-    box-shadow: 0 0 5px rgba(1, 170, 237, 0.35);
 }
 
 .card > .title, .card > .price {
@@ -105,6 +102,17 @@
     color: #FFF;
 }
 
+.premium button {
+    background: #01aaed;
+    color: #FFF;
+}
+
+.premium button:hover {
+    border-color: #6ab04c;
+    background: #6ab04c;
+    color: #FFF;
+}
+
 .info {
     float: left;
     width: 100%;
@@ -124,10 +132,6 @@
     .card-holder > .card {
         width: 100%;
         margin-bottom: 30px;
-    }
-    
-    .first {
-        background-position: center -180px;
     }
     
     .first .description {
