@@ -79,9 +79,8 @@
     }
     
     header .logo, .detach .logo {
-        float: none;
-        display: block;
-        margin: 10px auto;
+        float: left;
+        margin: 10px 15px;
         width: 200px;
         height: 60px;
         background: url("../img/devlogo-blue.png") center no-repeat;
@@ -134,9 +133,9 @@
     }
 }
 
-@media screen and (max-width: 800px) { 
+@media screen and (max-width: 840px) { 
     .first {
-        height: 95vh;
+        height: 730px;
     }
     
     .left-half {
@@ -379,8 +378,67 @@
 
 
 /* QUERIES BASEADOS NA ALTURA */
-@media screen and (min-height: 1024px) {
+@media screen and (min-height: 1024px) and (orientation: landscape) {
     .first {
-        height: 65vh;
+        height: 500px;
+        background-position: 0px -5px;
+        background-size: 120% auto;
+    }
+    
+    .left-half {
+        width: 49%;
+        margin-top: 120px;
+    }
+    
+    .right-half {
+        top: 176px;
+    }
+    
+    .third > .wrapper {
+        height: auto;
+        padding-bottom: 50px;
+    }
+    
+    .reverse .left-side, .reverse .right-side, .left-side, .right-side {
+        height: 380px;
+    }
+}
+
+@media screen and (min-height: 1080px) and (orientation: portrait) {
+    .first {
+        height: 500px;
+        background-position: 0px -5px;
+        background-size: 120% auto;
+    }
+    
+    .left-half {
+        width: 49%;
+        margin-top: 120px;
+    }
+    
+    .right-half {
+        top: 176px;
+    }
+    
+    .third > .wrapper {
+        height: auto;
+        padding-bottom: 50px;
+    }
+    
+    .reverse .left-side, .reverse .right-side, .left-side, .right-side {
+        height: 380px;
+    }
+}
+
+@media screen and (max-height: 780px) and (orientation: portrait) {
+    .first {
+        height: calc(100vh - 80px);
+    }
+}
+
+/* QUERIES ESPECIFICAS */
+@media screen and (width: 1366px) and (height: 1024px) {
+    .right-half {
+        top: 135px;
     }
 }
