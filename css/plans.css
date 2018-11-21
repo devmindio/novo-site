@@ -1,6 +1,8 @@
 .first {
     height: 330px !important;
-    background-position: center -200px;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
 }
 
 .first h1, .first .description {

@@ -336,6 +336,10 @@
 }
 
 @media screen and (max-width: 480px) {
+    header .logo, .detach .logo {
+        width: 150px;
+    }
+    
     .mobile {
         width: 80%;
     }
