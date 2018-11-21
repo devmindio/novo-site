@@ -80,7 +80,7 @@
     
     header .logo, .detach .logo {
         float: left;
-        margin: 10px 15px;
+        margin: 10px 0px;
         width: 200px;
         height: 60px;
         background: url("../img/devlogo-blue.png") center no-repeat;

@@ -106,8 +106,9 @@ header > .desktop {
 .menu {
     border: none !important;
     position: absolute;
-    right: 15px;
+    right: 5%;
     bottom: 17px;
+    margin: 0px;
     display: none;
 }
 
