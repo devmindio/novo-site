@@ -20,8 +20,8 @@
 }
 
 .second {
-    min-height: 100vh;
     height: auto;
+    padding-bottom: 100px;
 }
 
 .card-holder {
@@ -34,15 +34,20 @@
 }
 
 .card-holder > .card {
+    position: relative;
     float: left;
     width: 49%;
-    height: 200px;
+    height: 430px;
     background: #FFF;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
 }
 
 .card-holder > .card:nth-child(even) {
     float: right;
+}
+
+.premium {
+    box-shadow: 0 0 5px rgba(1, 170, 237, 0.35);
 }
 
 .card > .title, .card > .price {
@@ -55,6 +60,86 @@
 }
 
 .card > .price {
-    margin-top: 20px;
+    color: #6ab04c;
+    margin-top: 40px;
+    line-height: 20px;
     font-size: 44px;
+}
+
+.list-of-features {
+    float: left;
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    list-style-type: none;
+}
+
+.list-of-features > li {
+    width: 100%;
+    height: auto;
+    color: #555;
+    font-size: 18px;
+    padding: 4px 0px;
+    text-align: center;
+}
+
+.card button {
+    position: absolute;
+    bottom: 30px;
+    left: 25%;
+    width: 50%;
+	letter-spacing: 1px;
+	cursor: pointer;
+	float: left;
+	padding: 10px 0px;
+    font-size: 18px;
+	color: #01aaed;
+    border: 1px solid #01aaed;
+	background: transparent;
+    transition: all 0.13s linear;
+	border-radius: 3px;
+}
+
+.card button:hover {
+    background: #01aaed;
+    color: #FFF;
+}
+
+.info {
+    float: left;
+    width: 100%;
+    color: #777;
+    font-size: 18px;
+    margin-top: 30px;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.info > a {
+    text-decoration: none;
+    color: #01aaed;
+}
+
+@media screen and (max-width: 800px) {
+    .card-holder > .card {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    .first {
+        background-position: center -180px;
+    }
+    
+    .first .description {
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .card-holder {
+        width: 90%;
+        margin: 0px 5%;
+        margin-top: -75px;
+    }
 }
