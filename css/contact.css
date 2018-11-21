@@ -1,6 +1,8 @@
 .first {
     height: 330px !important;
-    background-position: center -200px;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
 }
 
 .first h1, .first .description {
@@ -157,10 +159,7 @@ input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus, te
     
     .contact-form {
         width: calc(100% - 60px);
-    }
-    
-    .first {
-        height: 45vh !important;
+        margin-top: -75px;
     }
     
     .first .description {
@@ -170,7 +169,6 @@ input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus, te
 
 @media screen and (max-height: 740px) {
     .first {
-        background-position: center;
         height: 360px !important;    
     }
     
@@ -180,7 +178,6 @@ input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus, te
     
     .contact-form {
         width: calc(100% - 40px);
-        margin-top: 0px;
         padding: 20px;
     }
 }
