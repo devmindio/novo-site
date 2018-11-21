@@ -148,4 +148,8 @@
         margin: 0px 5%;
         margin-top: -75px;
     }
+    
+    .first h1 {
+        font-size: 35px;
+    }
 }
