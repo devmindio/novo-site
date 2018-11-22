@@ -236,8 +236,8 @@
     }
     
     .ways-to-login {
-        width: 50%;
-        margin: 0px 25%;
+        width: 80%;
+        margin: 0px 10%;
         margin-top: 50px;
         overflow: visible;
     }
@@ -308,8 +308,8 @@
     }
 
     .ways-to-login {
-        width: 80%;
-        margin: 0px 10%;
+        width: 100%;
+        margin: 0px 0%;
         margin-top: 60px;
     }
     
@@ -386,10 +386,17 @@
     }
 }
 
-@media screen and (max-width: 320px) {
-    .ways-to-login {
+@media screen and (max-width: 440px) {
+    .ways-to-login > .wrapper {
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .ways-to-login > .wrapper {
         width: 100%;
-        margin: 0px 0%;
+        margin-left: 0%;
     }
 }
 
