@@ -275,6 +275,12 @@
     }
 }
 
+@media screen and (max-width: 840px) and (orientation: portrait) {
+    .first {
+        height: 590px;
+    }
+}
+
 @media screen and (max-width: 640px) {
     .left-half {
         width: 90%;
@@ -377,6 +383,13 @@
     
     footer > div {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .ways-to-login {
+        width: 100%;
+        margin: 0px 0%;
     }
 }
 
