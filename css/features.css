@@ -95,6 +95,10 @@
     background-image: url(../img/svg/responsivo.svg);
 }
 
+.integra {
+    background-image: url(../img/svg/integra.svg);
+}
+
 .ftp {
     background-image: url(../img/svg/FTP.svg);
 }
@@ -131,4 +135,52 @@
     font-weight: 400;
     font-size: 18px;
     color: #999;
+}
+
+@media screen and (max-width: 800px) {
+    .section-control, .paper-card {
+        width: 100%;
+        margin: 20px 0%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .first h1, .first .description {
+        width: 100%;
+        font-size: 38px;
+    }
+    
+    .first .description {
+        font-size: 16px;
+        margin: 25px 0px;
+    }
+    
+    .paper-card {
+        height: auto;
+        padding-bottom: 20px;
+        overflow: visible;
+    }
+    
+    .paper-card > .figure {
+        width: 100%;
+        background-size: auto 75%;
+    }
+    
+    .pwa {
+        background-size: auto 40% !important;
+    }
+    
+    .paper-card > .text {
+        float: left;
+        width: 100%;
+    }
+    
+    .section-control {
+        width: 110%;
+        margin-left: -5%;
+    }
+    
+    .section-control > button {
+        font-size: 3vmin;
+    }
 }
