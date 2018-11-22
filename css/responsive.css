@@ -361,6 +361,10 @@
         margin: 0px 5%;
     }
 
+    .diferenciais > .card:nth-child(1) {
+        margin-bottom: 45px;   
+    }
+    
     .carousel {
         width: 100%;
         height: auto;
