@@ -1,0 +1,134 @@
+.first {
+    position: relative;
+    height: 330px !important;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+}
+
+.first h1, .first .description {
+    float: left;
+    width: 100%;
+    text-align: center;
+    color: #FFF;
+    margin-top: 55px;
+    font-size: 44px;
+}
+
+.first .description {
+    float: left;
+    width: 40%;
+    margin: 25px 30%;
+    font-size: 18px;
+}
+
+.section-control {
+    float: left;
+    width: 70%;
+    height: 55px;
+    margin: 20px 15%;
+    margin-bottom: 0px;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
+}
+
+.section-control > button {
+    float: left;
+    width: 20%;
+    height: 55px;
+    margin: 0px;
+    border: 0px;
+    font-size: 18px;
+    background: #FFF;
+    color: #01aaed;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.13s ease;
+}
+
+.section-control > button:hover {
+    background: #EEE;
+}
+
+.section-control > .active, .section-control > .active:hover {
+    background: #01aaed;
+    color:#FFF;
+}
+
+.second {
+    height: auto;
+    padding-bottom: 100px;
+}
+
+.editor-section, .tools-section, .teamwork-section, .structure-section, .security-section {
+    display: none;
+}
+
+.editor-section {
+    display: block;
+}
+
+.paper-card {
+    float: left;
+    width: 70%;
+    height: 250px;
+    margin: 20px 15%;
+    margin-bottom: 0px;
+    background: #FFF;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
+}
+
+.paper-card > .figure {
+    float: left;
+    width: 250px;
+    height: 250px;
+    background-color: #01aaed;
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.responsivo {
+    background-image: url(../img/svg/responsivo.svg);
+}
+
+.ftp {
+    background-image: url(../img/svg/FTP.svg);
+}
+
+.collab {
+    background-image: url(../img/svg/collab.svg);
+}
+
+.ssd {
+    background-image: url(../img/svg/SSD.svg);
+}
+
+.pwa {
+    background-image: url(../img/svg/PWA.svg);
+}
+
+.paper-card > .text {
+    float: right;
+    width: calc(100% - 250px);
+    height: auto;
+}
+
+.text > .title, .text > .description {
+    float: left;
+    width: 90%;
+    height: auto;
+    margin: 15px 5%;
+    font-size: 24px;
+    font-weight: 600;
+    color: #01aaed;
+}
+
+.text > .description {
+    font-weight: 400;
+    font-size: 18px;
+    color: #999;
+}
