@@ -167,7 +167,7 @@ input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus, te
     }
 }
 
-@media screen and (max-height: 680px) {
+@media screen and (max-height: 650px) {
     .first {
         height: 360px !important;    
     }
