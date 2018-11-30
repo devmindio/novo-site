@@ -176,11 +176,21 @@
     }
     
     .section-control {
-        width: 110%;
-        margin-left: -5%;
+        width: 100%;
+        height: auto;
+        box-shadow: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 0px;
     }
     
     .section-control > button {
-        font-size: 3vmin;
+        float: left;
+        width: 45%;
+        border: 1px solid #01aaed;
+        margin-bottom: 20px;
+        border-radius: 50px;
+        font-size: 5vmin;
     }
 }
