@@ -51,6 +51,25 @@
     background: #EEE;
 }
 
+.section-control > button > svg {
+    display: none;
+    width: 50%;
+    height: auto;
+    margin: 0px 25%;
+    fill: #01aaed;
+}
+
+.section-control > button:hover > svg, .section-control > .active > svg {
+    fill: #FFF;
+}
+
+.section-control > .tools-trigger > svg, .section-control > .structure-trigger > svg, .section-control > .security-trigger > svg {
+    float: none;
+    width: auto;
+    height: 28px;
+    margin: 0px auto;
+}
+
 .section-control > .active, .section-control > .active:hover {
     background: #01aaed;
     color:#FFF;
@@ -93,6 +112,11 @@
 
 .responsivo {
     background-image: url(../img/svg/responsivo.svg);
+}
+
+.easy-path {
+    background-size: 50%;
+    background-image: url(../img/svg/link.svg);
 }
 
 .integra {
@@ -177,20 +201,42 @@
     
     .section-control {
         width: 100%;
-        height: auto;
+        height: 70px;
         box-shadow: none;
+        background: #FFF;
+        border-radius: 0px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
         margin-bottom: 0px;
+        margin-left: -5%;
+        position: fixed;
+        bottom: 0px;
+        z-index: 2;
     }
     
     .section-control > button {
         float: left;
-        width: 45%;
-        border: 1px solid #01aaed;
-        margin-bottom: 20px;
-        border-radius: 50px;
-        font-size: 5vmin;
+        width: 20%;
+        height: 70px;
+        border-radius: 0px;
+        margin-bottom: 0px;
+        font-size: 4vmin;
+    }
+    
+    .section-control > button > span {
+        display: none;
+    }
+    
+    .section-control > button > svg {
+        display: block;
+    }
+    
+    footer {
+        padding-bottom: 80px !important;
+    }
+    
+    .goTop {
+        bottom: 90px;
     }
 }
