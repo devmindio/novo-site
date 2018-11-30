@@ -13,6 +13,11 @@ $(document).ready(function(){
       $("html, body").animate({ scrollTop: 0 }, 400);
     });
     
+    //Esconde o banner de cookies
+    $(".close-this").click(function() {
+      $(".cookie-alert").hide();
+    });
+    
     //Gatilho para o menu (mobile) abrir ou fechar
     $(".menu").click(function() {
       $(".mobile").toggleClass("open");
