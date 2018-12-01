@@ -139,6 +139,14 @@
     background-image: url(../img/svg/PWA.svg);
 }
 
+.ssl {
+    background-image: url(../img/svg/PWA.svg);
+}
+
+.rsa {
+    background-image: url(../img/svg/RSA.svg);
+}
+
 .paper-card > .text {
     float: right;
     width: calc(100% - 250px);
