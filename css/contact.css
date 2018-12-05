@@ -1,3 +1,8 @@
+/* esconde as bugagens da pagina antiga */
+.footer-distributed, .banner {
+    display: none !important;
+}
+
 .first {
     height: 330px !important;
     background-size: cover;
@@ -40,15 +45,23 @@
 
 input[type="text"], input[type="tel"], input[type="email"], textarea {
     float: left;
-    border-radius: 3px;
-    border: 1px solid #999;
+    border: 1px solid #EEE;
     outline: none;
     padding: 10px;
     font-size: 16px;
+    background: #EEE;
+    transition: all 0.13s linear;
+}
+
+input[type="text"]:hover, input[type="tel"]:hover, input[type="email"]:hover, textarea:hover {
+    background: #FFF;
+    border: 1px solid #EEE;
 }
 
 input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus, textarea:focus {
-    border: 1px solid #01aaed;
+    background: #FFF;
+    border: 1px solid #FFF;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
 }
 
 #name, #message {
@@ -78,12 +91,13 @@ input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus, te
 }
 
 .submit {
+    width: 180px;
 	letter-spacing: 1px;
 	cursor: pointer;
 	float: left;
 	margin-top: 40px;
-    margin-left: calc(50% - 51px);
-	padding: 10px 25px;
+    margin-left: calc(50% - 90px);
+	padding: 10px 0px;
     font-size: 18px;
 	color: #01aaed;
 	background: transparent;
@@ -95,6 +109,28 @@ input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus, te
 .submit:hover {
     color: #FFF;
     background: #01aaed;
+}
+
+.MessageStatus {
+    display: none;
+    float: left;
+    margin: 15px 0px;
+    margin-top: -20px;
+    width: 100%;
+    height: auto;
+    padding: 20px 0px;
+    font-size: 16px;
+    text-align: center;
+    background: #01aaed;
+    color: #FFF;
+}
+
+.sucess {
+    background: #78e08f;
+}
+
+.fail {
+    background: #fa983a;
 }
 
 .right {

@@ -59,7 +59,7 @@
 }
 
 .card > .price {
-    color: #6ab04c;
+    color: #78e08f;
     margin-top: 40px;
     line-height: 20px;
     font-size: 44px;
@@ -110,8 +110,8 @@
 }
 
 .premium button:hover {
-    border-color: #6ab04c;
-    background: #6ab04c;
+    border-color: #78e08f;
+    background: #78e08f;
     color: #FFF;
 }
 

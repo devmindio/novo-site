@@ -110,6 +110,11 @@
     background-position: center;
 }
 
+.paper-card a {
+    text-decoration: none;
+    color: #01aaed;
+}
+
 .responsivo {
     background-image: url(../img/svg/responsivo.svg);
 }
@@ -140,11 +145,11 @@
 }
 
 .ssl {
-    background-image: url(../img/svg/PWA.svg);
+    background-image: url(../img/svg/certificado.svg);
 }
 
 .rsa {
-    background-image: url(../img/svg/RSA.svg);
+    background-image: url(../img/svg/cRSA.svg);
 }
 
 .paper-card > .text {

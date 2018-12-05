@@ -40,7 +40,7 @@
         margin-top: 60px;
     }
     
-    .cta-wrapper > h5, .cta-question {
+    .cta-wrapper > h6, .cta-question {
         text-align: center;
     }
     
@@ -80,10 +80,10 @@
     
     header .logo, .detach .logo {
         float: left;
-        margin: 10px 0px;
+        margin: 10px 15px;
         width: 200px;
         height: 60px;
-        background: url("../img/devlogo-blue.png") center no-repeat;
+        background: url("https://devmind.io/assets/modules/home/img/devlogo-blue.png") center no-repeat;
         background-size: contain;
     }
 
@@ -208,7 +208,8 @@
         position: relative;
         float: left;
         width: 100%;
-        height: 350px;
+        height: 180px;
+        background-size: contain;
         clear: both;
     }
     
@@ -236,8 +237,8 @@
     }
     
     .ways-to-login {
-        width: 80%;
-        margin: 0px 10%;
+        width: 50%;
+        margin: 0px 25%;
         margin-top: 50px;
         overflow: visible;
     }
@@ -275,13 +276,11 @@
     }
 }
 
-@media screen and (max-width: 840px) and (orientation: portrait) {
-    .first {
-        height: 590px;
-    }
-}
-
 @media screen and (max-width: 640px) {
+    header .logo, .detach .logo {
+        width: 50%;
+    }
+    
     .left-half {
         width: 90%;
         margin-left: 5%;
@@ -290,10 +289,11 @@
     
     .left-half button {
         width: 100%;
+        margin-top: -10px;
         margin-left: 0%;
     }
     
-    h2 {
+    .second > h2 {
         width: 90%;
         margin-left: 5%;
         text-align: left;
@@ -308,8 +308,8 @@
     }
 
     .ways-to-login {
-        width: 100%;
-        margin: 0px 0%;
+        width: 80%;
+        margin: 0px 10%;
         margin-top: 60px;
     }
     
@@ -342,10 +342,6 @@
 }
 
 @media screen and (max-width: 480px) {
-    header .logo, .detach .logo {
-        width: 150px;
-    }
-    
     .mobile {
         width: 80%;
     }
@@ -367,10 +363,6 @@
         margin: 0px 5%;
     }
 
-    .diferenciais > .card:nth-child(1) {
-        margin-bottom: 45px;   
-    }
-    
     .carousel {
         width: 100%;
         height: auto;
@@ -387,13 +379,6 @@
 }
 
 @media screen and (max-width: 440px) {
-    .ways-to-login > .wrapper {
-        width: 80%;
-        margin-left: 10%;
-    }
-}
-
-@media screen and (max-width: 360px) {
     .ways-to-login > .wrapper {
         width: 100%;
         margin-left: 0%;
@@ -421,6 +406,66 @@
         width: 100%;
         margin: 60px 0px;
         margin-bottom: 0px;
+    }
+}
+
+
+/* QUERIES BASEADOS NA ALTURA */
+@media screen and (min-height: 1024px) and (orientation: landscape) {
+    .first {
+        height: 500px;
+        background-position: 0px -5px;
+        background-size: 120% auto;
+    }
+    
+    .left-half {
+        width: 49%;
+        margin-top: 120px;
+    }
+    
+    .right-half {
+        top: 176px;
+    }
+    
+    .third > .wrapper {
+        height: auto;
+        padding-bottom: 50px;
+    }
+    
+    .reverse .left-side, .reverse .right-side, .left-side, .right-side {
+        height: 380px;
+    }
+}
+
+@media screen and (min-height: 1080px) and (orientation: portrait) {
+    .first {
+        height: 500px;
+        background-position: 0px -5px;
+        background-size: 120% auto;
+    }
+    
+    .left-half {
+        width: 49%;
+        margin-top: 120px;
+    }
+    
+    .right-half {
+        top: 176px;
+    }
+    
+    .third > .wrapper {
+        height: auto;
+        padding-bottom: 50px;
+    }
+    
+    .reverse .left-side, .reverse .right-side, .left-side, .right-side {
+        height: 380px;
+    }
+}
+
+@media screen and (max-height: 780px) and (orientation: portrait) {
+    .first {
+        height: calc(100vh - 80px);
     }
 }
 
