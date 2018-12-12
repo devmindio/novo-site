@@ -6,6 +6,10 @@
     background-position: center;
 }
 
+.minimal {
+    height: 190px !important;
+}
+
 .first h1 {
     float: left;
     width: 100%;

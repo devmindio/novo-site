@@ -86,10 +86,12 @@ $(document).ready(function(){
     //Relativo a página de suporte//
     ////////////////////////////////
     $(".search").click(function() {
-      $(".searchbox").addClass("search-focus");
+        $(".searchbox").addClass("search-focus");
+        $(".first").addClass("minimal");
     });
     
     $("header, .second").click(function() {
-      $(".searchbox").removeClass("search-focus");
+        $(".first").removeClass("minimal");
+        $(".searchbox").removeClass("search-focus");
     });
 });
