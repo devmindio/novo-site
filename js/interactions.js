@@ -81,4 +81,15 @@ $(document).ready(function(){
     $(".security-trigger").click(function() {
       $(".security-section").show();
     });
+    
+    ////////////////////////////////
+    //Relativo a página de suporte//
+    ////////////////////////////////
+    $(".search").click(function() {
+      $(".searchbox").addClass("search-focus");
+    });
+    
+    $("header, .second").click(function() {
+      $(".searchbox").removeClass("search-focus");
+    });
 });

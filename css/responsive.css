@@ -387,7 +387,7 @@
 
 @media screen and (max-width: 320px) {
     .first {
-        height: 390px !important;
+        height: 390px;
     }
     
     .right-half {

@@ -1,5 +1,5 @@
 .first {
-    position: relative;
+    position: static;
     height: 330px !important;
     background-size: cover;
     background-attachment: scroll;
@@ -21,7 +21,7 @@
     margin: 25px 30%;
 }
 
-.first .search {
+.searchbox .search {
     float: left;
     width: 100%;
     height: 40px;
@@ -35,10 +35,18 @@
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
 }
 
-.search-results {
-    float: left;
-    width: 100%;
-    
+.first .search-focus {
+    position: fixed;
+    width: 110%;
+    margin: 0px -5%;
+    bottom: 0px;
+    z-index: 5;
+}
+
+.search-focus > .search {
+    height: 60px;
+    margin: 0px;
+    border-radius: 0px;
 }
 
 .second {
@@ -46,14 +54,25 @@
     padding-bottom: 100px;
 }
 
+.search-results {
+    float: left;
+    width: 100%;
+    height: 100px;
+    background: #FFF;
+    overflow-x: hidden;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+
 @media screen and (max-width: 800px) {
-    
+
 }
 
 @media screen and (max-width: 480px) {
     .first h1, .first .description {
         width: 100%;
-        font-size: 38px;
+        font-size: 8vmin;
     }
     
     .first .description {
