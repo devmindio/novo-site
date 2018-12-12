@@ -230,7 +230,7 @@ header > .desktop {
 	height: calc(85vh - 80px);
     padding-top: 80px;
 	background-color: #01aaed;
-	background-image: url("https://i.imgur.com/QPYpOJR.jpg");
+	background-image: url("../img/header-blue.jpg"); /* https://i.imgur.com/QPYpOJR.jpg */
 	background-size: cover;
     background-attachment: fixed;
 	background-position: left center;
