@@ -53,7 +53,7 @@
             
             tour.addStep('teste-1', {
               text: 'Teste (nv1)',
-              attachTo: '.example-css-selector bottom',
+              attachTo: '.teste-1 right',
               classes: 'example-step-extra-class',
               buttons: [
                 {
@@ -62,19 +62,14 @@
                 }
               ]
             });
-            
             tour.addStep('teste-2', {
               text: 'Teste (nv2)',
-              attachTo: '.example-css-selector bottom',
+              attachTo: '.teste-2 right',
               classes: 'example-step-extra-class',
               buttons: [
                 {
                   text: 'Próximo',
                   action: tour.next
-                },
-                {
-                  text: 'Anterior',
-                  action: tour.previous
                 }
               ]
             });
