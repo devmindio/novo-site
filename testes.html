@@ -3,11 +3,12 @@
     <head>
         <title>Testes</title>
         
-        <link rel="stylesheet" type="text/css" href="css/shepherd-theme-square-dark.css">
+        <link rel="stylesheet" type="text/css" href="css/shepherd-theme-default.css">
         <style type="text/css">
             * {
                 margin: 0px;
                 padding: 0px;
+                font-family: "Brandon Grotesque", sans-serif;
             }
         
             body {
@@ -45,7 +46,8 @@
         
         <script>
             const tour = new Shepherd.Tour({
-              defaultStepOptions: {
+                useModalOverlay: true,
+                defaultStepOptions: {
                 classes: 'shadow-md bg-purple-dark',
                 scrollTo: true
               }
@@ -64,12 +66,12 @@
             });
             tour.addStep('teste-2', {
               text: 'Teste (nv2)',
-              attachTo: '.teste-2 right',
+              attachTo: '.teste-2 left',
               classes: '',
               buttons: [
                 {
                   text: 'Próximo',
-                  action: tour.next
+                  action: tour.complete
                 }
               ]
             });
