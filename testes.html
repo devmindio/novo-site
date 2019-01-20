@@ -3,6 +3,7 @@
     <head>
         <title>Testes</title>
         
+        <link rel="stylesheet" type="text/css" href="css/shepherd-theme-square-dark.css">
         <style type="text/css">
             * {
                 margin: 0px;
@@ -40,5 +41,29 @@
         </div>
         
         <script src="https://unpkg.com/tippy.js@3/dist/tippy.all.min.js"></script>
+        <script type="text/javascript" src="js/shepherd.min.js"></script>
+        
+        <script>
+            const tour = new Shepherd.Tour({
+              defaultStepOptions: {
+                classes: 'shadow-md bg-purple-dark',
+                scrollTo: true
+              }
+            });
+            
+            tour.addStep('teste-1', {
+              text: 'This step is attached to the bottom of the <code>.example-css-selector</code> element.',
+              attachTo: '.example-css-selector bottom',
+              classes: 'example-step-extra-class',
+              buttons: [
+                {
+                  text: 'Próximo',
+                  action: tour.next
+                }
+              ]
+            });
+            
+            tour.start();
+        </script>
     </body>
 </html>
