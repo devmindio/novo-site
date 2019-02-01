@@ -82,18 +82,8 @@ $(document).ready(function(){
       $(".security-section").show();
     });
     
-    ////////////////////////////////
-    //Relativo a página de suporte//
-    ////////////////////////////////
-    $(".search").click(function() {
-        $(".search-results").show();
-        $(".searchbox").addClass("search-focus");
-        $(".first").addClass("minimal");
-    });
+    ////////////////////////////////////////
+    // Relativo a página de suporte (FAQ) //
+    ////////////////////////////////////////
     
-    $("header").click(function() {
-        $(".search-results").hide();
-        $(".first").removeClass("minimal");
-        $(".searchbox").removeClass("search-focus");
-    });
 });
