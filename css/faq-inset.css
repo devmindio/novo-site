@@ -143,6 +143,18 @@
   font-size: 18px;
 }
 
+.reading-section > .description > span {
+  cursor: pointer;
+  color: #01aaed;
+}
+
+.reading-section > .description > img {
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+  text-align: center;
+}
+
 .more-content {
     float: left;
     width: 100%;
