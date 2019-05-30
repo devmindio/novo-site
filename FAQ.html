@@ -65,56 +65,108 @@
 
     <section class="first">
       <h1>Como podemos te ajudar?</h1>
+
+      <input type="search" id="searchBox" placeholder="Pesquise Aqui..." title="Escreva aqui para pesquisar sua dúvida" onkeyup="querySearch()">
     </section>
 
     <section class="second">
-        <div class="card-holder">
-            <div class="card">
-                <svg viewBox="0 0 24 24"><path d="M13,8A4,4 0 0,1 9,12A4,4 0 0,1 5,8A4,4 0 0,1 9,4A4,4 0 0,1 13,8M17,18V20H1V18C1,15.79 4.58,14 9,14C13.42,14 17,15.79 17,18M20.5,14.5V16H19V14.5H20.5M18.5,9.5H17V9A3,3 0 0,1 20,6A3,3 0 0,1 23,9C23,9.97 22.5,10.88 21.71,11.41L21.41,11.6C20.84,12 20.5,12.61 20.5,13.3V13.5H19V13.3C19,12.11 19.6,11 20.59,10.35L20.88,10.16C21.27,9.9 21.5,9.47 21.5,9A1.5,1.5 0 0,0 20,7.5A1.5,1.5 0 0,0 18.5,9V9.5Z" /></svg>
+      <section class="faq-frame">
+        <div class="faq-wrapper">
+          <div class="faq-category">
+            <a class="pp">Primeiros Passos</a>
+            <a class="tool">Ferramentas</a>
+            <a class="fin">Planos de Serviço</a>
+            <a class="out">Outros</a>
+          </div>
 
-                <p class="title">
-                    Dúvidas Frequentes
-                </p>
-                <p class="description">
-                    A seção com as dúvidas mais frequentes sobre o Devmind.io
-                </p>
+          <ul id="myUL">
+            <!-- TEXTO INICIAL -->
+            <li class="startText" id="welcome">
+              <a class="title">
+                Bem vindo a central de dúvidas do Devmind.io!
+              </a>
 
-                <button class="show-faq">Ver mais</button>
-            </div>
+              <p class="descr">
+                Clique em alguma das categorias para começar ou
+                use a barra de pesquisa para descrever
+                especificamente sua dúvida.
+              </p>
+            </li>
 
-            <div class="card">
-                <svg viewBox="0 0 24 24"><path d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z" /></svg>
+            <!-- PERGUNTAS DE PRIMEIROS PASSOS -->
+            <li class="tutorial">
+              <a class="title">
+                Como me cadastrar no Devmind?
+              </a>
 
-                <p class="title">
-                    Primeiros Passos
-                </p>
-                <p class="description">
-                    Quer começar a aprender sobre a ferramenta? Este é o lugar certo!
-                </p>
+              <p class="descr">
+                Você precisa inicialmente ter uma conta em pelo
+                menos um destes serviços: Dropbox (para projetos via FTP),
+                Github ou Gitlab.
+                <br><br>
+                Depois de criar sua conta, basta ir para a <a href="https://devmind.io/login">
+                página de login</a> e clicar no cartão correspondente a sua conta. Se um
+                formulário de login aparecer, preencha com os dados da sua conta e prossiga.
+              </p>
+            </li>
 
-                <a href="faq-getting-started.html">
-                  <button class="show-getting-started">
-                    Ver mais
-                  </button>
-                </a>
-            </div>
+            <!-- PERGUNTAS SOBRE FERRAMENTAS -->
+            <li class="tools">
+              <a class="title">
+                O que é o Devmind Spyglass?
+              </a>
 
-            <div class="card">
-                <svg viewBox="0 0 24 24"><path d="M19,2L14,6.5V17.5L19,13V2M6.5,5C4.55,5 2.45,5.4 1,6.5V21.16C1,21.41 1.25,21.66 1.5,21.66C1.6,21.66 1.65,21.59 1.75,21.59C3.1,20.94 5.05,20.5 6.5,20.5C8.45,20.5 10.55,20.9 12,22C13.35,21.15 15.8,20.5 17.5,20.5C19.15,20.5 20.85,20.81 22.25,21.56C22.35,21.61 22.4,21.59 22.5,21.59C22.75,21.59 23,21.34 23,21.09V6.5C22.4,6.05 21.75,5.75 21,5.5V7.5L21,13V19C19.9,18.65 18.7,18.5 17.5,18.5C15.8,18.5 13.35,19.15 12,20V13L12,8.5V6.5C10.55,5.4 8.45,5 6.5,5V5Z" /></svg>
+              <p class="descr">
+                O spyglass é uma forma de registrar as visitas do seu site
+                ou aplicativo web em vídeo. Você poderá ver se o usuário
+                teve algum problema durante o uso e também detectar falhas
+                na experiência do usuário.
+                <br>
+                <br>
+                Vale lembrar que a privacidade dos usuários é vital e inviolável,
+                então use este recurso somente em telas onde não há dados sensíveis
+                de seus usuários.
+              </p>
+            </li>
 
-                <p class="title">
-                    Termos e Políticas
-                </p>
-                <p class="description">
-                    Nesta seção você encontrará todos os artigos relativos aos termos legais e políticas da empresa e da ferramenta.
-                </p>
+            <!-- PERGUNTAS FINANCEIRAS -->
+            <li class="finance">
+              <a class="title">
+                Quais são os planos do Devmind?
+              </a>
 
-                <a href="faq-terms.html">
-                  <button class="show-terms">
-                    Ver mais
-                  </button>
-                </a>
-            </div>
+              <p class="descr">
+                O devmind trabalha com dois segmentos de plano, o Gratuito e o Premium.
+                <br><br>
+                <strong>No plano Gratuito</strong>, você poderá acessar e editar seus repositórios públicos,
+                terá acesso a até 5 projetos via FTP e não poderá utilizar nossas outras ferramentas
+                integradas (como o Spyglass).
+                <br><br>
+                <strong>No plano Premium</strong>, você tem acesso a todos os seus repositórios,
+                projetos ilimitados via FTP e acesso a todas as ferramentas integradas do Devmind,
+                mesmo as que ainda estão em fase beta.
+              </p>
+            </li>
+
+            <!-- OUTRAS PERGUNTAS -->
+            <li class="other">
+              <a class="title">
+                Para quais plataformas o Devmind está disponível?
+              </a>
+
+              <p class="descr">
+                O Devmind funciona a partir da web, então qualquer plataforma
+                que tenha um browser moderno, o Devmind vai funcionar. Se você
+                tiver vontade de instalar o Devmind em seu dispositivo, utilize
+                um dos artigos abaixo para saber mais detalhes:
+                <br>
+                <br>
+                - <a href="https://blog.devmind.io/instalando-o-devmind-io-no-seu-smartphone/">Instalando Devmind.io no seu Smartphone</a>
+                <br>
+                - <a href="https://blog.devmind.io/pwa-google-chrome-desktop/">Instalando Devmind.io no seu Computador</a>
+              </p>
+            </li>
+          </ul>
         </div>
 
         <p class="more-content">
@@ -198,5 +250,6 @@
         new WOW().init();
     </script>
     <script src="js/interactions.js"></script> <!-- Script real da página -->
+    <script src="js/faq.js"></script>
   </body>
 </html>
